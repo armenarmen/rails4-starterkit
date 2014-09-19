@@ -13,6 +13,9 @@ gem 'terminal-notifier', group: [:development]
 # LINUX
 # gem 'rb-inotify', :group => [:development, :test]   # monitor file changes without hammering the disk
 
+# httparty and requirements
+gem 'multi_xml'
+gem 'httparty'
 
 
 # Monitoring
@@ -148,6 +151,7 @@ group :production do
   gem 'dalli'                   # memcached
   gem 'memcachier'              # heroku add-on for auto config of dalli
   gem 'unicorn'
-  gem 'rails_12factor'          # https://devcenter.heroku.com/articles/rails4
+  gem 'rails_12factor'          # https://devcenter.heroku.com/articles/
+
 end
 
