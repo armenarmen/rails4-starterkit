@@ -10,7 +10,9 @@
   </p>
 <% end %>
 
-
+<% if @info %>
 <h1>
 Hmmm, <%= @info["name"] %> well I'd say that there is a <%=@info["probability"] %> chance that that is a name for <%=@info["gender"] %> I'm basing that on <%= @info["count"] %> observations.  But what do I know? I'm just a robot :-(
 </h1>
+
+<% end %>

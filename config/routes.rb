@@ -47,5 +47,5 @@ Rails.application.routes.draw do
 
   get 'robots.:format' => 'robots#index'
 
-  root 'pages#home'
+  root 'genderize#index'
 end
